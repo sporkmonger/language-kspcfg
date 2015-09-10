@@ -12,7 +12,7 @@
         'name': 'keyword.control.part.kspcfg'
       '4':
         'name': 'variable.other.name.part.kspcfg'
-    'match': '^\\s*([\\-\\*\\!\\+\\$\\%])?(PART)(\\[(\\*|\\w+)\\])?'
+    'match': '^\\s*([\\-\\*\\!\\+\\$\\%\\@])?(PART)(\\[(\\*|\\w+)\\])?'
     'name': 'meta.part.kspcfg'
   }
   {
@@ -21,7 +21,7 @@
         'name': 'keyword.operator.modifier.attribute.kspcfg'
       '2':
         'name': 'keyword.control.module.kspcfg'
-    'match': '^\\s*([\\-\\*\\!\\+\\$\\%])?(MODULE)'
+    'match': '^\\s*([\\-\\*\\!\\+\\$\\%\\@])?(MODULE)'
     'name': 'meta.module.kspcfg'
   }
   {
@@ -34,7 +34,7 @@
         'name': 'keyword.operator.assignment.source.kspcfg'
       '4':
         'name': 'string.other.kspcfg'
-    'match': '^\\s*([\\-\\*\\!\\+\\$\\%])?(\\b[a-zA-Z_]*\\b)\\s*(=)\\s*(.*)$'
+    'match': '^\\s*([\\-\\*\\!\\+\\$\\%\\@])?(\\b[a-zA-Z_]*\\b)\\s*(=)\\s*(.*)$'
     'name': 'meta.attribute.kspcfg'
   }
   {
