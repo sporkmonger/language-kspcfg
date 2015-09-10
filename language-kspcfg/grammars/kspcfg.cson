@@ -7,34 +7,29 @@
   {
     'captures':
       '1':
-        'name': 'keyword.operator.modifier.attribute.kspcfg'
+        'name': 'keyword.operator.node.source.kspcfg'
       '2':
-        'name': 'keyword.control.part.kspcfg'
+        'name': 'keyword.control.node.source.kspcfg'
       '4':
-        'name': 'variable.other.name.part.kspcfg'
-    'match': '^\\s*([\\-\\*\\!\\+\\$\\%\\@])?(PART)(\\[(\\*|\\w+)\\])?'
-    'name': 'meta.part.kspcfg'
+        'name': 'variable.other.namewithwildcards.node.source.kspcfg'
+      '6':
+        'name': 'keyword.selector.node.source.kspcfg'
+      '8':
+        'name': 'meta.selector.expression.source.kspcfg'
+    'match': '^\\s*([\\-\\*\\!\\+\\$\\%\\@])?(\\w+)(\\[([_\\w\\?\\*]+)\\])?(:(HAS|FOR|NEEDS|BEFORE|AFTER|FINAL|Final)(\\[(.*)\\])?)*'
+    'name': 'meta.node.kspcfg'
   }
   {
     'captures':
       '1':
-        'name': 'keyword.operator.modifier.attribute.kspcfg'
+        'name': 'keyword.operator.modifier.attribute.source.kspcfg'
       '2':
-        'name': 'keyword.control.module.kspcfg'
-    'match': '^\\s*([\\-\\*\\!\\+\\$\\%\\@])?(MODULE)'
-    'name': 'meta.module.kspcfg'
-  }
-  {
-    'captures':
-      '1':
-        'name': 'keyword.operator.modifier.attribute.kspcfg'
-      '2':
-        'name': 'variable.other.readwrite.attribute.kspcfg'
+        'name': 'variable.other.readwrite.attribute.source.kspcfg'
       '3':
-        'name': 'keyword.operator.assignment.source.kspcfg'
+        'name': 'keyword.operator.replacement.source.kspcfg'
       '4':
         'name': 'string.other.kspcfg'
-    'match': '^\\s*([\\-\\*\\!\\+\\$\\%\\@])?(\\b[a-zA-Z_]*\\b)\\s*(=)\\s*(.*)$'
+    'match': '^\\s*([\\-\\*\\!\\+\\$\\%\\@])?(\\b[a-zA-Z_]*\\b)\\s*([\\+\\*\\!\\^]*=)\\s*(.*)$'
     'name': 'meta.attribute.kspcfg'
   }
   {
@@ -46,3 +41,5 @@
     'name': 'comment.line.double-slash.source.kspcfg'
   }
 ]
+# 'repository':
+#   'expression'
