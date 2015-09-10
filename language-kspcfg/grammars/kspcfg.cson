@@ -7,7 +7,7 @@
   {
     'captures':
       '1':
-        'name': 'punctuation.definition.part.kspcfg'
+        'name': 'punctuation.modifier.part.kspcfg'
       '2':
         'name': 'keyword.control.part.kspcfg'
     'match': '^\\s*([-*!+$%])?(PART)'
@@ -16,10 +16,14 @@
   {
     'captures':
       '1':
-        'name': 'keyword.control.attribute.kspcfg'
+        'name': 'punctuation.modifier.attribute.kspcfg'
       '2':
+        'name': 'keyword.control.attribute.kspcfg'
+      '3':
         'name': 'punctuation.assignment.attribute.kspcfg'
-    'match': '^\\s*(\\b[a-zA-Z]*\\b)\\s*(=)\\s*'
+      '4':
+        'name': 'string.other.kspcfg'
+    'match': '^\\s*([-*!+$%])?(\\b[a-zA-Z_]*\\b)\\s*(=)\\s*(.*)$'
     'name': 'meta.attribute.kspcfg'
   }
   {
@@ -29,5 +33,9 @@
         'name': 'punctuation.definition.comment.source.kspcfg'
     'end': '$\\n?'
     'name': 'comment.line.double-slash.source.kspcfg'
+  }
+  {
+    'match': '[0-9\.]+'
+    'name': 'constant.numeric.kspcfg'
   }
 ]
