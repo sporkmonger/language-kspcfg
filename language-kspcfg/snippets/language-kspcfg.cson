@@ -1,0 +1,8 @@
+'.source.kspcfg':
+  'Delete part':
+    'prefix': '-'
+    'body': """
+-PART[$1]
+{
+}
+"""

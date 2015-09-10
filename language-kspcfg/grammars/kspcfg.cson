@@ -1,0 +1,5 @@
+'name': 'KSP Config'
+'scopeName': 'source.kspcfg'
+'fileTypes': [
+  'cfg'
+]

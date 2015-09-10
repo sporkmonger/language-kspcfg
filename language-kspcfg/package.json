@@ -1,0 +1,18 @@
+{
+  "name": "language-kspcfg",
+  "main": "./lib/language-kspcfg",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-kspcfg:toggle"
+  },
+  "repository": "https://github.com/sporkmonger/language-kspcfg",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

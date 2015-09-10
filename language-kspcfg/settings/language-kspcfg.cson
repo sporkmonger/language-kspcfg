@@ -1,0 +1,5 @@
+'.source.kspcfg':
+  'editor':
+    'commentStart': '// '
+    'increaseIndentPattern': '^\\s*{\\s*$'
+    'decreaseIndentPattern': '^\\s*}\\s*$'
